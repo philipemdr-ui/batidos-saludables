@@ -166,6 +166,7 @@ footer a{color:var(--crisp)}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
+<script src="https://checkout.kashpay.com/scripts/upsell-processor.js" data-kashpay-upsell-delay-support></script>
 </head>
 <body>
 
@@ -284,8 +285,7 @@ footer a{color:var(--crisp)}
       </ul>
       <div class="price" data-k="price"></div>
       <p class="price-note">pago único</p>
-      <!-- BOTÓN KASH PAY: pega aquí el código del botón de este producto -->
-      <div id="kashpay-upsell"></div>
+      <button type="button" data-kashpay-upsell-delay="60" onclick="acceptUpsell('https://checkout.kashpay.com/u/9f0d9892528fdaa9')" style="font-family: 'Poppins'; font-size: 25px; font-weight: 600; line-height: 1.3; color: #e9cb0c; background-color: #057932; border: none; border-radius: 32px; padding: 13px 7%; cursor: pointer; text-align: center; display: block; margin: auto;">ACEPTAR OFERTA</button>
       <small>Pago seguro · Producto digital, no se envía nada físico</small>
     </div>
     <div class="guar">
